@@ -1,0 +1,10 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@/@PACKAGE_NAME@
+
+Name: gbc-c-wrapper
+Description: C wrapper around google breakpad
+Version: @PACKAGE_VERSION@
+Libs: -L${libdir} -lgbc_c_wrapper
+Cflags: -I${includedir}

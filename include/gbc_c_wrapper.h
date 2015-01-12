@@ -1,5 +1,5 @@
-#ifndef BREAKPAD_C_API_H__
-#define BREAKPAD_C_API_H__
+#ifndef GBC_C_WRAPPER_H
+#define GBC_C_WRAPPER_H
 
 typedef void*   CExceptionHandler;
 
@@ -13,5 +13,3 @@ CExceptionHandler newCExceptionHandlerSimple(void);
 #endif
 
 #endif
-
-

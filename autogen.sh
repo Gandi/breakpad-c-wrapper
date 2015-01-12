@@ -10,6 +10,7 @@
 
 # Scan configure.ac and copy the necessary macros into aclocal.m4.
 aclocal
+libtoolize
 
 # Generate Makefile.in from Makefile.am (and copy necessary support
 # files, because of -ac).

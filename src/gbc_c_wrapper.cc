@@ -1,6 +1,7 @@
-#include "c_wrapper_api.h"
-#include "client/linux/handler/exception_handler.h"
 #include <stdio.h>
+#include <client/linux/handler/exception_handler.h>
+
+#include "gbc_c_wrapper.h"
 
 static bool dumpCallback(const google_breakpad::MinidumpDescriptor& descriptor,
                          void* context,

@@ -1,15 +1,21 @@
 AC_INIT([gbc_c_wrapper], [0.1], [nikita@elyzion.net])
 AM_INIT_AUTOMAKE([-Wall -W foreign subdir-objects])
 
+AM_PROG_AR
+AC_PROG_CXX_C_O
+
+
+AC_CONFIG_MACRO_DIRS([m4])
+
 LT_INIT
 
-AC_PROG_CXX
-#AC_PROG_CC_STDC
-AM_PROG_CXX_C_O
+
 
 AC_CONFIG_FILES([
+ gbc_c_wrapper.pc
  Makefile
  src/Makefile
+ include/Makefile
 ])
 
 
@@ -53,15 +59,10 @@ if test "$GCC" = yes ; then
                         -Wstrict-aliasing \
                         -Wfloat-equal \
                         -Wundef \
-                        -Wshadow \
                         -Wpointer-arith \
-                        -Wbad-function-cast \
                         -Wwrite-strings \
                         -Wlogical-op \
                         -Waggregate-return \
-                        -Wstrict-prototypes \
-                        -Wold-style-definition \
-                        -Wmissing-prototypes \
                         -Wmissing-declarations \
                         -Wmissing-noreturn 
 #                        -Wredundant-decls
@@ -95,6 +96,6 @@ AM_CFLAGS="$AM_CFLAGS $WARNINGCFLAGS"
 AM_CXXFLAGS="$AM_CFLAGS"
 
 # Add default AM_CFLAGS.
-AC_SUBST([AM_CFLAGS, AM_CXXFLAGS])
+AC_SUBST([AM_CXXFLAGS])
 
 AC_OUTPUT
