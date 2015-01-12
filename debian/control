@@ -1,0 +1,13 @@
+Source: gbc-c-wrapper
+Section: devel
+Priority: extra
+Maintainer: Nikita Kozlov <nikita@gandi.net>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.4
+
+Package: gbc-c-wrapper-dev
+Architecture: amd64
+Depends: ${misc:Depends}, libbreakpad-dev
+Description: C wrapper around google breakpad 
+ Breakpad is a set of client and server components which implement a
+ crash-reporting system. This project is a minimal C around it.

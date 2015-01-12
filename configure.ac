@@ -4,12 +4,9 @@ AM_INIT_AUTOMAKE([-Wall -W foreign subdir-objects])
 AM_PROG_AR
 AC_PROG_CXX_C_O
 
-
 AC_CONFIG_MACRO_DIRS([m4])
 
 LT_INIT
-
-
 
 AC_CONFIG_FILES([
  gbc_c_wrapper.pc
@@ -17,7 +14,6 @@ AC_CONFIG_FILES([
  src/Makefile
  include/Makefile
 ])
-
 
 PKG_CHECK_MODULES([BREAKPAD_CLIENT], [breakpad-client])
 

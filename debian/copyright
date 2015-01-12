@@ -1,0 +1,9 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gbc-c-wrapper
+Source: https://gitlab.corp.gandi.net/nikita.kozlov/breakpad-c-wrapper
+
+Files: *
+Copyright: 2014- Gandi SAS
+License:
+ All rights reserved
+
