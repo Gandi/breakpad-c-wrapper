@@ -6,5 +6,5 @@ includedir=@includedir@/@PACKAGE_NAME@
 Name: gbc-c-wrapper
 Description: C wrapper around google breakpad
 Version: @PACKAGE_VERSION@
-Libs: -L${libdir} -lgbc_c_wrapper
-Cflags: -I${includedir}
+Libs: -L${libdir} -lgbc_c_wrapper @PTHREAD_LIBS@
+Cflags: -I${includedir} @PTHREAD_CFLAGS@

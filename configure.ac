@@ -7,6 +7,8 @@ AC_PROG_CXX_C_O
 AC_CONFIG_MACRO_DIRS([m4])
 
 LT_INIT
+m4_include(m4/ax_pthread.m4)
+AX_PTHREAD
 
 AC_CONFIG_FILES([
  gbc_c_wrapper.pc
