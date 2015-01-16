@@ -4,7 +4,7 @@ AM_INIT_AUTOMAKE([-Wall -W foreign subdir-objects])
 AM_PROG_AR
 AC_PROG_CXX_C_O
 
-AC_CONFIG_MACRO_DIRS([m4])
+AC_CONFIG_MACRO_DIR([m4])
 
 LT_INIT
 m4_include(m4/ax_pthread.m4)
