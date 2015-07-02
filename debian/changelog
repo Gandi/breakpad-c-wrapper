@@ -1,3 +1,9 @@
+gbc-c-wrapper (0.2.0) unstable; urgency=low
+
+  * Add RegisterAppMemory and UnregisterAppMemory functions.
+
+ -- Nikita Kozlov <nikita@gandi.net>  Thu, 02 Jan 2015 17:24:21 +0100
+
 gbc-c-wrapper (0.1.5) unstable; urgency=low
 
   * Add infos for static linking.
