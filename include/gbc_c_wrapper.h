@@ -8,6 +8,8 @@ extern "C"
 {
 #endif
 CExceptionHandler newCExceptionHandlerSimple(void);
+void RegisterAppMemory(void* ptr, size_t length);
+void UnregisterAppMemory(void* ptr);
 #ifdef __cplusplus
 }
 #endif
