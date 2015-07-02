@@ -40,6 +40,10 @@ private:
   static google_breakpad::ExceptionHandler* instance_;
 };
 
+google_breakpad::MinidumpDescriptor ExceptionGandlerSingleton::descriptor_;
+google_breakpad::ExceptionHandler::MinidumpCallback ExceptionGandlerSingleton::dumpCallback_;
+google_breakpad::ExceptionHandler* ExceptionGandlerSingleton::instance_;
+
 static bool dumpCallback(const google_breakpad::MinidumpDescriptor& descriptor,
                          void* context,
                          bool succeeded)
