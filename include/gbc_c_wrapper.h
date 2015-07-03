@@ -1,6 +1,8 @@
 #ifndef GBC_C_WRAPPER_H
 #define GBC_C_WRAPPER_H
 
+#include <sys/types.h>
+
 typedef void*   CExceptionHandler;
 
 #ifdef __cplusplus
