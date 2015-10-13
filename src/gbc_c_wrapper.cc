@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <syslog.h>
 #include <client/linux/handler/exception_handler.h>
 #include "gbc_c_wrapper.h"
 
@@ -48,6 +49,7 @@ static bool dumpCallback(const google_breakpad::MinidumpDescriptor& descriptor,
                          void* context,
                          bool succeeded)
 {
+  syslog(LOG_INFO, "Dump path: %s.dmp (succeed: %d)\n", descriptor.path(), succeeded);
   printf("Dump path: %s.dmp\n", descriptor.path());
   return succeeded;
 }
