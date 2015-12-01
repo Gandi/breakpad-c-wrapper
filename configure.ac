@@ -14,10 +14,15 @@ AC_CONFIG_FILES([
  gbc_c_wrapper.pc
  Makefile
  src/Makefile
+ tests/Makefile
  include/Makefile
 ])
 
 PKG_CHECK_MODULES([BREAKPAD_CLIENT], [breakpad-client])
+PKG_CHECK_MODULES(CHECK, [check >= 0.9.4],,[AC_MSG_RESULT([no, testing is disabled])])
+AM_CONDITIONAL(HAVE_CHECK, [test "x$CHECK_LIBS" != "x"])
+AC_SUBST(CHECK_CFLAGS)
+AC_SUBST(CHECK_LIBS)
 
 ###############################################################################
 # If using GCC, set some additional AM_CFLAGS:
