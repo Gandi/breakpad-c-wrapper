@@ -1,1 +1,2 @@
-TODO
+Minimal C wrapper around google breakpad.
+We use it at Gandi for creating Qemu minidump.
